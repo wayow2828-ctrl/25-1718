@@ -1,182 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Football World</title>
- <style>
-    h1 {
-      color: red;           /* makes text red */
-      text-align: center;   /* centers the text */
-      font-family: Arial, sans-serif; /* uses Arial font */
-    }
- .highlight {
-  font-weight: bold;
-  background-color: yellow;
-  font-size: 20px;
-}
-
- div {
-  margin: 20px;
-  padding: 10px;
-  border: 2px solid black;
-}
-
- body {
-      background-color: white;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        background-color: lightblue;
-      }
-    }
-.banner {
-      background-image: url('your-image.jpg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
-      height: 300px;
-    }
- button {
-      background-color: blue;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-      transition: background-color 0.5s;
-    }
-
-    button:hover {
-      background-color: green;
-    }
- .relative-box {
-      position: relative;
-      background-color: lightcoral;
-      width: 200px;
-      height: 200px;
-      left: 50px;
-      top: 20px;
-    }
-
-    .absolute-box {
-      position: absolute;
-      background-color: lightgreen;
-      width: 150px;
-      height: 150px;
-      left: 100px;
-      top: 50px;
-    }
- body {
-      font-size: 16px;
-    }
-
-   
-    .container {
-      font-size: 20px;
-      border: 1px solid black;
-      padding: 10px;
-      margin: 20px;
-    }
-
-   
-    .px-text {
-      font-size: 20px;
-    }
-
-    
-    .em-text {
-      font-size: 1.5em;
-    }
-
-    
-    .rem-text {
-      font-size: 1.5rem;
-    }
-.container {
-      display: flex;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .column {
-      flex: 1;
-      padding: 20px;
-      background-color: lightgray;
-      border: 1px solid black;
-    }
- .rgb {
-      color: rgb(255, 0, 0);
-    }
-
-    .hex {
-      color: #00ff00;
-    }
-
-    .hsl {
-      color: hsl(240, 100%, 50%);
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StepStyle Shoes</title>
+  <!-- 👇 This line tells the browser to load the CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Football World</h1>
-  <h2>Building the Future of the Game</h2>
-  <h3>Youth Training Programs</h3>
-  <h4>Coaching and Skills Improvement</h4>
-  <h5>Community and Grassroots Projects</h5>
-  <h6>Our Vision: One Ball, One Dream</h6>
-<h1>Responsive Design Example</h1>
-  <p>Resize your browser — background turns light blue on small screens.</p>
-  
-<p>The beautiful game</p>
+  <header>
+    <h1>StepStyle Shoes</h1>
+    <p>Quality shoes for every step you take</p>
+  </header>
 
-  <p class="highlight">This paragraph is highlighted in yellow, bold, and larger text.</p>
- <div class="banner"></div>
-   <div class="container">
-    <p class="px-text">This text uses <strong>px</strong> (fixed size — 20px).</p>
-    <p class="em-text">This text uses <strong>em</strong> (1.5 × parent = 30px here).</p>
-    <p class="rem-text">This text uses <strong>rem</strong> (1.5 × root = 24px here).</p>
-  </div>
-<button>Hover over me</button>
- <div class="container">
-    <div class="column">
-      <h2>Left Column</h2>
-      <p>This is the left column.</p>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="intro">
+    <h2>Welcome to Our Online Shoe Store</h2>
+    <p>We offer a wide variety of shoes to match every style and occasion.  
+    From sneakers to formal shoes — we’ve got your feet covered!</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Our Latest Collection</h2>
+    <div class="images">
+<img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e3a67d5b-1e61-4f63-a8c7-7e1f28e21c4a/air-max-95-shoes.png" alt="Nike Air Max 95">
+
+      <img src="https://hips.hearstapps.com/hmg-prod/images/running-shoes-005-68419d3f4376f.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/mhl-opener-run-shoes-311-67edd9f20e75a.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeAupenATWumPFfvPude1gjYuxonggL2jxEw&s">
+      <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_617,c_limit/777003de-39c5-491e-a8a2-9600005abb48/women-s-shoes-clothing-accessories.jpg">
+      <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_350,h_350/global/406497/01/sv01/fnd/PNA/fmt/png/A$AP-ROCKY-x-PUMA-Mostro-Sneakers">
+      <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/47b7945e-a379-4c24-b9df-98f4eef178e5/NIKE+AIR+MAX+PLUS.png">
+      <img src="https://images.asics.com/is/image/asics/1203A609_021_SR_RT_GLB?$sfcc-product$">
     </div>
+  </section>
 
-    <div class="column">
-      <h2>Right Column</h2>
-      <p>This is the right column.</p>
-    </div>
-  </div>
-<p class="rgb">This text uses RGB color (red).</p>
-  <p class="hex">This text uses HEX color (green).</p>
-  <p class="hsl">This text uses HSL color (blue).</p>
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Football_in_Brazil.jpg"
-       alt="Football Photo" 
-       width="400">
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Football_in_Brazil.jpg" 
-     alt="Football Photo" 
-     width="400">
+  <section class="video">
+    <h2>Watch Our Shoe Video</h2>
+    <video controls width="80%">
+      <source src="">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FjknHfig6Q0?si=a3PcDFyGCNClNdJK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
- <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Soccer_ball.svg" 
-       alt="Football Photo" 
-       width="400">
-
-<iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/8F9jXYOH2c0" 
-    title="Football Highlights" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/seRjxc-ptsc?si=aeLYCVqj9OhnOBaA"
-    title="Football Skills"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
+  <footer>
+    <p>&copy; 2025 StepStyle Shoes | Designed for School Assignment</p>
+  </footer>
 
 </body>
 </html>
