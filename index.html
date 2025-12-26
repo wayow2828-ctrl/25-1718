@@ -1,59 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StepStyle Shoes</title>
-  <!-- 👇 This line tells the browser to load the CSS file -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shoe Store</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f7f7f7;
+    }
+
+    header {
+        background: #1a1a1a;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav {
+        background: #333;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    section {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    aside {
+        background: #e8f2ff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #111;
+        color: white;
+        margin-top: 20px;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 15px 0;
+    }
+
+    table, th, td {
+        border: 1px solid #777;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: center;
+    }
+
+    /* ----------- MEDIA QUERIES ----------- */
+    @media (max-width: 900px) {
+        main {
+            grid-template-columns: 1fr;
+        }
+
+        nav {
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 600px) {
+        header h1 { font-size: 20px; }
+        nav a { font-size: 14px; }
+    }
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>StepStyle Shoes</h1>
-    <p>Quality shoes for every step you take</p>
-  </header>
+<header>
+    <h1>Premium Shoe Collection</h1>
+    <p>Comfort • Style • Performance</p>
+</header>
 
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Shop</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
+<nav>
+    <a href="#products">Products</a>
+    <a href="#videos">Videos</a>
+    <a href="#tables">Size Charts</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-  <section class="intro">
-    <h2>Welcome to Our Online Shoe Store</h2>
-    <p>We offer a wide variety of shoes to match every style and occasion.  
-    From sneakers to formal shoes — we’ve got your feet covered!</p>
-  </section>
+<main>
 
-  <section class="gallery">
-    <h2>Our Latest Collection</h2>
-    <div class="images">
-<img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e3a67d5b-1e61-4f63-a8c7-7e1f28e21c4a/air-max-95-shoes.png" alt="Nike Air Max 95">
+<section id="products">
+    <h2>Featured Shoes</h2>
 
-      <img src="https://hips.hearstapps.com/hmg-prod/images/running-shoes-005-68419d3f4376f.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*">
-      <img src="https://hips.hearstapps.com/hmg-prod/images/mhl-opener-run-shoes-311-67edd9f20e75a.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeAupenATWumPFfvPude1gjYuxonggL2jxEw&s">
-      <img src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_617,c_limit/777003de-39c5-491e-a8a2-9600005abb48/women-s-shoes-clothing-accessories.jpg">
-      <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_350,h_350/global/406497/01/sv01/fnd/PNA/fmt/png/A$AP-ROCKY-x-PUMA-Mostro-Sneakers">
-      <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/47b7945e-a379-4c24-b9df-98f4eef178e5/NIKE+AIR+MAX+PLUS.png">
-      <img src="https://images.asics.com/is/image/asics/1203A609_021_SR_RT_GLB?$sfcc-product$">
-    </div>
-  </section>
+    <!-- 6 IMAGES -->
+    <img src="https://images.unsplash.com/photo-1519741491047-cc4e4b91a3c5" alt="Shoe 1">
+    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Shoe 2">
+    <img src="https://images.unsplash.com/photo-1606813902917-923828b2e5b8" alt="Shoe 3">
+    <img src="https://images.unsplash.com/photo-1600180758890-6ff0144eac07" alt="Shoe 4">
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Shoe 5">
+    <img src="https://images.unsplash.com/photo-1519741491000-caf0f8b3f5e4" alt="Shoe 6">
+</section>
 
-  <section class="video">
-    <h2>Watch Our Shoe Video</h2>
-    <video controls width="80%">
-      <source src="">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FjknHfig6Q0?si=a3PcDFyGCNClNdJK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      Your browser does not support the video tag.
-    </video>
-  </section>
+<section id="videos">
+    <h2>Shoe Reviews & Style Tips</h2>
 
-  <footer>
-    <p>&copy; 2025 StepStyle Shoes | Designed for School Assignment</p>
-  </footer>
+    <!-- 6 VIDEOS -->
+    <iframe src="https://www.youtube.com/embed/6fQ5O9gNfbg"></iframe>
+    <iframe src="https://www.youtube.com/embed/dm5iAfDdc0o"></iframe>
+    <iframe src="https://www.youtube.com/embed/6t_3aX2tB-k"></iframe>
+    <iframe src="https://www.youtube.com/embed/8bM5VfYw-nk"></iframe>
+    <iframe src="https://www.youtube.com/embed/H6JtR2o8JZ0"></iframe>
+    <iframe src="https://www.youtube.com/embed/3jWRrafhO7M"></iframe>
+</section>
+
+<section id="tables">
+    <h2>Size & Information</h2>
+
+    <!-- TABLE 1 -->
+    <h3>Men’s Size Chart</h3>
+    <table>
+        <tr><th>US</th><th>UK</th><th>EU</th></tr>
+        <tr><td>7</td><td>6</td><td>40</td></tr>
+        <tr><td>8</td><td>7</td><td>41</td></tr>
+        <tr><td>9</td><td>8</td><td>42</td></tr>
+    </table>
+
+    <!-- TABLE 2 -->
+    <h3>Women’s Size Chart</h3>
+    <table>
+        <tr><th>US</th><th>UK</th><th>EU</th></tr>
+        <tr><td>6</td><td>4</td><td>37</td></tr>
+        <tr><td>7</td><td>5</td><td>38</td></tr>
+        <tr><td>8</td><td>6</td><td>39</td></tr>
+    </table>
+
+    <!-- TABLE 3 -->
+    <h3>Store Locations</h3>
+    <table>
+        <tr><th>City</th><th>Branch</th><th>Contact</th></tr>
+        <tr><td>Nairobi</td><td>CBD Mall</td><td>0700 123 456</td></tr>
+        <tr><td>Mombasa</td><td>Nyali Center</td><td>0712 555 999</td></tr>
+        <tr><td>Kisumu</td><td>Lake Plaza</td><td>0790 444 321</td></tr>
+    </table>
+</section>
+
+<aside>
+    <h3>Special Offers</h3>
+    <p>Buy 2 sneakers — get 10% off.</p>
+    <p>Free delivery on orders over $50.</p>
+    <p>New arrivals every Friday!</p>
+</aside>
+
+</main>
+
+<footer id="contact">
+    <p>&copy; 2025 Shoe Store — All Rights Reserved</p>
+    <p>Email: support@shoestore.com</p>
+</footer>
 
 </body>
 </html>
